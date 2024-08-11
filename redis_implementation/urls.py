@@ -19,7 +19,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from new.views import *
-
+#url
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('expensive/', expensive_view, name='expensive_view'),
