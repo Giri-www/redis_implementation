@@ -1,0 +1,33 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Store Data</title>
+</head>
+<body>
+    <h1>Data Storage</h1>
+    <p>{{ message }}</p>
+    <a href="{% url 'retrieve_data' %}">Go to Retrieve Data</a>
+</body>
+</html> -->
+<!-- ++++++++++++++++++++++++++
+  -->
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>Store Data</title>
+  </head>
+  <body>
+      <h1>Store Data in Redis</h1>
+      <form method="post">
+          {% csrf_token %}
+          <label for="key">Key:</label>
+          <input type="text" id="key" name="key" required>
+          <label for="value">Value:</label>
+          <input type="text" id="value" name="value" required>
+          <button type="submit">Store Data</button>
+      </form>
+      <a href="{% url 'retrieve_data' %}">Go to Retrieve Data</a>
+  </body>
+  </html>
+  
+  
